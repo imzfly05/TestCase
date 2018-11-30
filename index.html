@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<base href="/">
+
+	<title>TestCase</title>
+	<meta name="description" content="TestCase">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<!-- <meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"> -->
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- <meta name="theme-color" content="#000"> -->
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header>
+		<div class="logo"><a href="#"><img class="img-responsive" src="img/Logo.png" alt="logo"></a> </div>
+	</header>
+
+
+	<section class="section-first">
+		<div class="container">
+			<h1>&iexcl;Ay caramba!</h1>
+
+			<form class="first-form">
+				<div class="form-row row">
+					<div class="form-group col-md-4">
+
+						<input type="text" class="form-control" placeholder="Название">
+					</div>
+					<div class="form-group col-md-4 col-sm-6 col-6 order-2 order-md-0">
+
+						<input type="text" class="form-control" placeholder="Год">
+					</div>
+					<div class="form-group col-md-4 col-sm-6 col-6 order-1 order-md-0">
+
+						<input type="text" class="form-control" placeholder="Цена">
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Описание">
+				</div>
+				<div class="form-row ">
+					<div class="col-md-4 col-12">
+						<label class="btn-label">Цвет</label>
+						<div class="color-picker-wraper">
+							<ul class="color-list">
+								<li class="color-list-item">
+									<input type="radio" class="radio-btn white-b" name="choice" id="white" />
+									<label for="white" class="label"></label>
+								</li>
+
+								<li class="color-list-item">
+									<input type="radio" class="radio-btn black-b" name="choice" id="black" />
+									<label for="black" class="label"></label>
+								</li>
+
+								<li class="color-list-item">
+									<input type="radio" class="radio-btn grey-b" name="choice" id="grey" />
+									<label for="grey" class="label"></label>
+								</li>
+
+								<li class="color-list-item">
+									<input type="radio" class="radio-btn pink-b" name="choice" id="pink" />
+									<label for="pink" class="label"></label>
+								</li>
+								<li class="color-list-item">
+									<input type="radio" class="radio-btn salat" name="choice" id="salat" />
+									<label for="salat" class="label"></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-6 second-form">
+						<select id="inputState" class="form-control">
+							<option class="option-ds" disabled selected hidden>Статус</option>
+							<option>В наличии</option>
+							<option>Ожидается</option>
+							<option>Нет в наличии</option>
+						</select>
+					</div>
+					<div class="col-md-4 col-sm-6 col-6 second-form">
+						<button class="button btn btn-block">Отправить <i class="fas fa-chevron-right"></i></button>
+					</div>
+				</div>
+
+			</form>
+
+
+		</div>
+	</section>
+	<section class="section-second">
+		<div class="container">
+			<h2>Автомобили в наличии</h2>			
+			<div class="row">									
+					<table class="table table-responsive-sm">
+							<thead>
+									<tr>
+										<th scope="col-md-6 col-6">Название</th>
+										<th scope="col-md-1 col-4">Год</th>
+										<th scope="col-md-1 col-4">Цвет</th>
+										<th scope="col-md-1 col-4">Статус</th>
+										<th scope="col-md-2  col-6">Цена</th>
+										<th scope="col-md-1 "></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td> 1.6 MT Ambiente 85 л.с. МКПП <span class="option">+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, MP3</span></td>
+										<td >2012</td>
+										<td  class="item-car-color"><div class="car-color" style="background-color: black;"></div></td>
+										<td >Ожидается</td>
+										<td>1 689 000 руб.</td>
+										<td><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></td>
+									</tr>
+									<tr>
+										<td>1.6 MT Ambiente Plus 105 л.с. МКПП</td>
+										<td>2012</td>
+										<td class="item-car-color"><div class="car-color" style="background-color: #FFFFFF; border: 1px solid #999"></div></td>
+										<td>Ожидается</td>
+										<td>1 189 900 руб.</td>													
+										<td><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></td>
+									</tr>
+									<tr>
+										<td>1.6 MT Trend 105 л.с. МКПП</td>
+										<td>2012</td>
+										<td class="item-car-color"><div class="car-color" style="background-color: black;"></div></td>
+										<td>В наличии</td>
+										<td>1 459 000 руб.</td>
+										<td><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></td>
+									</tr>
+									<tr>
+										<td>1.6 PowerShift Trend Sport 105 л.с. АКПП</td>
+										<td>2012</td>
+										<td class="item-car-color"><div class="car-color" style="background-color: #CBCBCC;"></div></td>
+										<td>Ожидается</td>
+										<td>1 459 000 руб.</td>
+										<td><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></td>
+									</tr>
+									<tr>
+										<td>2.0 MT Trend Sport 150 л.с. МКПП</td>
+										<td>2012</td>
+										<td class="item-car-color"><div class="car-color" style="background-color: #D74345;"></div></td>
+										<td>Ожидается</td>
+										<td>786 000 руб.</td>
+										<td><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></td>
+									</tr>
+									<tr>
+										<td>2.0 PowerShift Trend Sport 150 л.с. АКПП<span class="option">+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, MP3</span></td>
+										<td>2013</td>
+										<td class="item-car-color"><div class="car-color" style="background-color: #88C504;"></div></td>
+										<td>Нет в наличии</td>
+										<td>821 000 руб.</td>
+										<td><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></td>
+									</tr>
+								</tbody>
+					</table>				
+			</div>
+		</div>
+
+	</section>
+
+	<footer>
+		<div class="copy">
+			<span class="copyright">© 2015 Captain Quack</span> <br> Десница тысячелетия и моллюск!
+		</div>
+
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
+
+<!-- <div class="row">
+		<div class="col-12 car-table">
+			<div class="row thead">
+				<div class="col-6">Название</div>
+				<div class="col">Год</div>
+				<div class="col">Цвет</div>
+				<div class="col">Статус</div>
+				<div class="col">Цена</div>
+				<div class="col"></div>
+			</div>
+			<div class="row tbody">
+					<div class="col-6">1.6 MT Ambiente 85 л.с. МКПП <span class="option">+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, MP3</span></div>
+					<div class="col">2012</div>
+					<div class="col item-car-color"><div class="car-color" style="background-color: black;"></div></div>
+					<div class="col">Ожидается</div>
+					<div class="col">1 689 000 руб.</div>
+					<div class="col"><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></div>
+			</div>
+			
+		</div>
+		
+	</div> -->
