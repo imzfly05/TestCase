@@ -1,0 +1,14 @@
+@import "_mixins/font-face";
+
+@include font-face("roboto-t", "../fonts/RobotoRegular/RobotoRegular",400);
+@include font-face("roboto-t", "../fonts/RobotoBold/RobotoBold", 700);
+@include font-face("roboto-t", "../fonts/RobotoMedium/RobotoMedium", 500);
+@include font-face("roboto-t", "../fonts/RobotoBlack/RobotoBlack", 800);
+
+
+@include font-face("FuturaPT-t", "../fonts/FuturaPT/FuturaPTbold/FuturaPT-Bold", bold);
+@include font-face("FuturaPT-t", "../fonts/FuturaPT/FuturaPTdemi/FuturaPT-Demi", 600);
+@include font-face("FuturaPT-t", "../fonts/FuturaPT/FuturaPTextrabold/FuturaPT-ExtraBold", 800);
+@include font-face("FuturaPT-t", "../fonts/FuturaPT/FuturaPTheavy/FuturaPT-Heavy", 900);
+@include font-face("FuturaPT-t", "../fonts/FuturaPT/FuturaPTlight/FuturaPT-Light", 300);
+@include font-face("FuturaPT-t", "../fonts/FuturaPT/FuturaPTmedium/FuturaPT-Medium", 500);

@@ -1,0 +1,87 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.second-section{
+		padding: $gutter 0;
+	}
+	.third-section{
+		padding: $gutter 0;		
+	}
+	.second-section .section-header, 
+	.section-header{
+		padding-bottom: $gutter*2;
+	}
+	.fourth-section{
+		padding: $gutter 0;
+	}
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+	header{
+		.main-nav{
+			display: none;
+		}
+		.mobile-menu-button{
+			display: block;
+		}
+	}
+	.first-section{
+		h1{
+			font-size: 50px;
+		}
+		p{
+			font-size: 18px;
+		}
+	}
+	.contact-section{
+		.my-contacts{
+			text-align: center;
+			padding-bottom: $gutter;
+		}
+	}
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	.third-section .right-item{
+	padding-left: 15px;
+}
+	.second-section .item-wraper>div{
+		padding-top: 20px;
+	}
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
