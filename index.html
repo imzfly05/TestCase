@@ -4,11 +4,10 @@
 <head>
 
 	<meta charset="utf-8">
-	
+	<base href="/TestCase/">
 
 	<title>TestCase</title>
 	<meta name="description" content="TestCase">
-	<base href="/TestCase/">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -28,186 +27,250 @@
 </head>
 
 <body>
-
-	<header>
-		<div class="logo"><a href="#"><img class="img-responsive" src="./img/Logo.png" alt="logo"></a> </div>
+	<header class="top-line">
+		<a class="logo" href="#">English4U</a>
+		<div class="mobile-menu-button"><i class="fas fa-bars"></i></div>
+		<div class="mobile-menu d-md-none">
+			<nav class="main-nav" id="m-menu">
+				<ul>
+					<li><a href="#first">Главная</a></li>
+					<li><a href="#second">Почему Мы</a></li>
+					<li><a href="#fourth">Отзывы</a></li>
+					<li><a href="#third">Контакты</a></li>
+					<li><a href="#fifth">Отзывы</a></li>
+				</ul>
+			</nav>
+		</div>
+		<nav class="main-nav" id="menu">
+			<ul>
+				<li><a href="#first">Главная</a></li>
+				<li><a href="#second">Почему Мы</a></li>
+				<li><a href="#fourth">Совет</a></li>
+				<li><a href="#third">Методика</a></li>
+				<li><a href="#fifth">Отзывы</a></li>
+				<li><a href="#contact-s">Контакты</a></li>
+			</ul>
+		</nav>
 	</header>
 
 
-	<section class="section-first">
+	<section id="first" class="first-section pattern">
 		<div class="container">
-			<h1>&iexcl;Ay caramba!</h1>
 
-			<form class="first-form">
-				<div class="form-row row">
-					<div class="form-group col-md-4">
-
-						<input type="text" class="form-control" placeholder="Название">
-					</div>
-					<div class="form-group col-md-4 col-sm-6 col-6 order-2 order-md-0">
-
-						<input type="text" class="form-control" placeholder="Год">
-					</div>
-					<div class="form-group col-md-4 col-sm-6 col-6 order-1 order-md-0">
-
-						<input type="text" class="form-control" placeholder="Цена">
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Описание">
-				</div>
-				<div class="form-row ">
-					<div class="col-md-4 col-12">
-						<label class="btn-label">Цвет</label>
-						<div class="color-picker-wraper">
-							<ul class="color-list">
-								<li class="color-list-item">
-									<input type="radio" class="radio-btn white-b" name="choice" id="white" />
-									<label for="white" class="label"></label>
-								</li>
-
-								<li class="color-list-item">
-									<input type="radio" class="radio-btn black-b" name="choice" id="black" />
-									<label for="black" class="label"></label>
-								</li>
-
-								<li class="color-list-item">
-									<input type="radio" class="radio-btn grey-b" name="choice" id="grey" />
-									<label for="grey" class="label"></label>
-								</li>
-
-								<li class="color-list-item">
-									<input type="radio" class="radio-btn pink-b" name="choice" id="pink" />
-									<label for="pink" class="label"></label>
-								</li>
-								<li class="color-list-item">
-									<input type="radio" class="radio-btn salat" name="choice" id="salat" />
-									<label for="salat" class="label"></label>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-6 second-form">
-						<select id="inputState" class="form-control">
-							<option class="option-ds" disabled selected hidden>Статус</option>
-							<option>В наличии</option>
-							<option>Ожидается</option>
-							<option>Нет в наличии</option>
-						</select>
-					</div>
-					<div class="col-md-4 col-sm-6 col-6 second-form">
-						<button class="button btn btn-block">Отправить <i class="fas fa-chevron-right"></i></button>
-					</div>
-				</div>
-
-			</form>
-
+			<div class="first-section-wrapper ">
+				<h1>Заговори на английском, не выходя из дома</h1>
+				<p>Поможем поднять уровень языка за 3 месяца всем тем, кто вечно занят</p>
+				<div class="button btn-primary"><a href="#">пройди первый урок бесплатно</a></div>
+			</div>
 
 		</div>
 	</section>
-	<section class="section-second">
+
+	<section id="second" class="second-section">
 		<div class="container">
-			<h2>Автомобили в наличии</h2>			
-			<div class="row">									
-					<table class="table table-responsive-sm">
-							<thead>
-									<tr>
-										<th scope="col-md-6 col-6">Название</th>
-										<th scope="col-md-1 col-4">Год</th>
-										<th scope="col-md-1 col-4">Цвет</th>
-										<th scope="col-md-1 col-4">Статус</th>
-										<th scope="col-md-2  col-6">Цена</th>
-										<th scope="col-md-1 "></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td> 1.6 MT Ambiente 85 л.с. МКПП <span class="option">+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, MP3</span></td>
-										<td >2012</td>
-										<td  class="item-car-color"><div class="car-color" style="background-color: black;"></div></td>
-										<td >Ожидается</td>
-										<td>1 689 000 руб.</td>
-										<td><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></td>
-									</tr>
-									<tr>
-										<td>1.6 MT Ambiente Plus 105 л.с. МКПП</td>
-										<td>2012</td>
-										<td class="item-car-color"><div class="car-color" style="background-color: #FFFFFF; border: 1px solid #999"></div></td>
-										<td>Ожидается</td>
-										<td>1 189 900 руб.</td>													
-										<td><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></td>
-									</tr>
-									<tr>
-										<td>1.6 MT Trend 105 л.с. МКПП</td>
-										<td>2012</td>
-										<td class="item-car-color"><div class="car-color" style="background-color: black;"></div></td>
-										<td>В наличии</td>
-										<td>1 459 000 руб.</td>
-										<td><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></td>
-									</tr>
-									<tr>
-										<td>1.6 PowerShift Trend Sport 105 л.с. АКПП</td>
-										<td>2012</td>
-										<td class="item-car-color"><div class="car-color" style="background-color: #CBCBCC;"></div></td>
-										<td>Ожидается</td>
-										<td>1 459 000 руб.</td>
-										<td><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></td>
-									</tr>
-									<tr>
-										<td>2.0 MT Trend Sport 150 л.с. МКПП</td>
-										<td>2012</td>
-										<td class="item-car-color"><div class="car-color" style="background-color: #D74345;"></div></td>
-										<td>Ожидается</td>
-										<td>786 000 руб.</td>
-										<td><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></td>
-									</tr>
-									<tr>
-										<td>2.0 PowerShift Trend Sport 150 л.с. АКПП<span class="option">+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, MP3</span></td>
-										<td>2013</td>
-										<td class="item-car-color"><div class="car-color" style="background-color: #88C504;"></div></td>
-										<td>Нет в наличии</td>
-										<td>821 000 руб.</td>
-										<td><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></td>
-									</tr>
-								</tbody>
-					</table>				
+			<span class="section-header">Этот онлайн-курс составлен специально для тех, кто не чувствует уверенности во время
+				общения на английском и откладывает занятия языком на потом.</span>
+			<div class="row item-wraper justify-content-center">
+				<div class="col-lg-4 col-md-8 ">
+					<span><img src="img/icons/clock.svg" alt="logo"></span>
+					<h2>60 минут онлайн</h2>
+					<p>Короткие сессии по 60 минут состоят из разных по содержанию блоков, которые зарядят мозг на работу, но не дадут
+						ему закипеть.</p>
+				</div>
+				<div class="col-lg-4 col-md-8">
+					<span><img src="img/icons/clock.svg" alt="logo"></span>
+					<h2>Без стресса</h2>
+					<p>Занимайтесь из дома или в переговорке во время перерыва. Живите в привычном темпе, становясь лучше каждый день.</p>
+				</div>
+				<div class="col-lg-4 col-md-8">
+					<span><img src="img/icons/clock.svg" alt="logo"></span>
+					<h2>В вашем темпе</h2>
+					<p>Чтобы не копить долги и чувство вины, преподаватель подберёт вам комфортный темп.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="fourth" class="fourth-section">
+		<div class="container">
+			<span class="section-header">Как перестать откладывать английский на потом:</span>
+			<div class="row item-wraper justify-content-center">
+				<div class="col-lg-4 col-md-8 ">
+					<span><img src="img/icons/4.svg" alt="logo"></span>
+					<h2>Определите свой уровень</h2>
+					<p>Опишите свой уровень владения языком: <br>
+						A. Ничего не понимаю<br>
+						B. Могу объясниться в поездке<br>
+						C. Могу читать материалы по работе<br>
+						D. Могу пройти собеседование</p>
+
+				</div>
+				<div class="col-lg-4 col-md-8">
+					<span><img src="img/icons/5.svg" alt="logo"></span>
+					<h2>Пройдите пробный урок</h2>
+					<p>Пробный урок — это сокращённая версия полноценного занятия с преподавателем. За это время вы познакомитесь,
+						преподаватель расскажет о структуре занятий и даст домашнее задание.</p>
+				</div>
+				<div class="col-lg-4 col-md-8">
+					<span><img src="img/icons/6.svg" alt="logo"></span>
+					<h2>Назначьте следующее занятие</h2>
+					<p>Платите за обучение перед каждым занятием или сразу курсом и назначайте удобное время в расписании
+						преподавателя.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="third" class="third-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 left-item">
+
+					<img src="img/macbook/macbook.jpg" alt="методика">
+
+				</div>
+				<div class="col-lg-6 right-item">
+					<span>Наша методика</span>
+					<h2>Почему это работает лучше обучения в классе</h2>
+					<p>Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Вопрос своих пояс прямо
+						все маленькая. Страну обеспечивает пустился вершину приставка, имеет его если живет одна лучше что ты. Текстов?</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="fifth-section" id="fifth">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<span class="section-header">Прочтите отзывы, которые написали
+						наши студенты на английском после 3 месяцев обучения:</span>
+				</div>
+			</div>
+		</div>
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="bg-carusel">
+						<div class="students-item">
+							<div class="student-item-photo" style="background-image: url(img/students/1.jpg);"></div>
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-md-8">
+										<p>It is necessary to choose a visual aid that is appropriate for the material and audience. The purpose of
+											the visual aid is to enhance the presentation.</p>
+										<h3>Ivan Ivanov</h3>
+										<span class="workplace">Продавец Консультант</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="bg-carusel">
+						<div class="students-item">
+							<div class="student-item-photo" style="background-image: url(img/students/1.jpg);"></div>
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-md-8">
+										<p>It is necessary to choose a visual aid that is appropriate for the material and audience. The purpose of
+											the visual aid is to enhance the presentation.</p>
+										<h3>Ivan Ivanov</h3>
+										<span class="workplace">Продавец Консультант</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="bg-carusel">
+						<div class="students-item">
+							<div class="student-item-photo" style="background-image: url(img/students/1.jpg);"></div>
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-md-8">
+										<p>It is necessary to choose a visual aid that is appropriate for the material and audience. The purpose of
+											the visual aid is to enhance the presentation.</p>
+										<h3>Ivan Ivanov</h3>
+										<span class="workplace">Продавец Консультант</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+	</section>
+	<section class="contact-section" id="contact-s">
+		<div class="container">
+			<span class="section-header">Добейтесь уверенного английского под присмотром личного преподавателя</span>
+			<div class="row">
+				<div class="col-md-4 my-contacts">
+					<h3>English4u</h3>
+					<span class="contact">Адрес:</span>
+					<p>г.Москва, ул.Петросяна 24, офис 15</p>
+					<span class="contact">Email:</span>
+					<p>ТвояПочта@english4u.com</p>
+					<span class="contact">Телефон:</span>
+					<p>+7 977 123 45 46</p>
+
+				</div>
+				<div class="col-md-8">
+					<form>
+							<div class="form-group">
+									<input type="text" class="form-control" placeholder="Имя">
+								</div>
+			
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Email">
+								</div>
+			
+								<div class="form-group">
+									<textarea class="form-control" rows="7" placeholder="Комментарии"></textarea>
+								</div>
+			
+								<div class="form-group">
+									<button class="btn btn-primary btn-block button-contact">Отправить</button>
+								</div>
+					</form>					
+				</div>
+
+
 			</div>
 		</div>
 
 	</section>
 
-	<footer>
-		<div class="copy">
-			<span class="copyright">© 2015 Captain Quack</span> <br> Десница тысячелетия и моллюск!
+	<footer >
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="social-item-wrap">
+						<div class="social-item"><i class="fab fa-vk"></i></div>
+						<div class="social-item"><i class="fab fa-instagram"></i></div>
+						<div class="social-item"><i class="fab fa-odnoklassniki"></i></div>
+					</div>
+				</div>
+				<div class="col-md-8 rights">
+					<p>© English4U, 2018 Все права защищены. Перепечатка и цитирование материалов запрещены.</p>					
+				</div>
+			</div>
 		</div>
-
 	</footer>
 
-	<script src="./js/scripts.min.js"></script>
+	<script src="js/scripts.min.js"></script>
 
 </body>
 
 </html>
-
-<!-- <div class="row">
-		<div class="col-12 car-table">
-			<div class="row thead">
-				<div class="col-6">Название</div>
-				<div class="col">Год</div>
-				<div class="col">Цвет</div>
-				<div class="col">Статус</div>
-				<div class="col">Цена</div>
-				<div class="col"></div>
-			</div>
-			<div class="row tbody">
-					<div class="col-6">1.6 MT Ambiente 85 л.с. МКПП <span class="option">+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, MP3</span></div>
-					<div class="col">2012</div>
-					<div class="col item-car-color"><div class="car-color" style="background-color: black;"></div></div>
-					<div class="col">Ожидается</div>
-					<div class="col">1 689 000 руб.</div>
-					<div class="col"><a class="delet-line  btn-secondary" role="button" aria-pressed="true">Удалить</a></div>
-			</div>
-			
-		</div>
-		
-	</div> -->
